@@ -76,11 +76,21 @@ footer {
 }
 
 .image-container img {
-    width: 80px;  /* Keep all images square (1:1) */
-    height: 80px;
+    width: 90px;  /* Keep all images square (1:1) */
+    height: 90px;
     object-fit: cover;
     position: absolute;
     border-radius: 50px; /* Optional rounded edges */
+}
+
+.message-box {
+    width: 25%; /* Adjust width as needed */
+    margin: 20px auto; /* Centers the box horizontally */
+    padding: 20px; /* Adds space inside */
+    background-color: pink; /* Change this to any color */
+    border-radius: 10px; /* Soft rounded corners */
+    text-align: center; /* Centers text inside */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
 }
 
 /* Positioning images closely in a star formation */
@@ -90,3 +100,6 @@ footer {
 .image-container img:nth-child(4) { bottom: 15%; left: 25%; transform: translate(-50%, -50%); } /* Lower Left */
 .image-container img:nth-child(5) { top: 35%; left: 20%; transform: translate(-50%, -50%); } /* Upper Left */
 .image-container img:nth-child(6) { top: 50%; left: 50%; transform: translate(-50%, -50%); } /* Center */
+
+
+
