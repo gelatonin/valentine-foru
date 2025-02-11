@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="Forher2.css">
+</head>
+<body>
+    <header>Happy Valentine's Day, My Wifey!</header>
+
+    <!-- Main Page -->
+    <div id="mainPage" class="container active">
+        <p>HAPPY VALENTINE'S DAY!</p>
+        <p>Click here to see what's inside <3</p>
+        <img src="images/Happy Love You GIF by LINE FRIENDS.gif" alt="GIF" class="gif">
+        <button class="button" onclick="goToPage('nextPage')">Click Here</button>
+    </div>
+
+    <!-- Next Page -->
+    <div id="nextPage" class="container">
+        <p>Happy Valentine's Day!</p>
+        <p>Hello Asawa ko! Ang ganda mo naman dito</p>
+        <img src="images/her.jpg" alt="My Love">
+        <p>Some More Text</p>
+        <img src="images/her2.jpg" alt="My Baby">
+        <p>Some More Text</p>
+        <img src="images/her3.jpg" alt="My Bebi">
+        <button class="button" onclick="goToPage('lastPage')">Next</button>
+    </div>
+
+    <!-- Last Page -->
+    <div id="lastPage" class="container">
+        <p>Last Page Title</p>
+        <div class="image-container star-layout">
+            <img src="images/her4.jpg" alt="Image">
+            <img src="images/her5.jpg" alt="Image">
+            <img src="images/her6.jpg" alt="Image">
+            <img src="images/her7.jpg" alt="Image">
+            <img src="images/her8.jpg" alt="Image">
+            <img src="images/her9.jpg" alt="Image">
+        </div>
+        <p>Some Final Text</p>
+        <button class="button" onclick="goToPage('mainPage')">Start Over</button>
+    </div>
+
+    <footer>
+        <p>Gawa ng Asawa mo!</p>
+        <p>PENGE AKO SOFTIE! WAHAHAHAHA!</p>
+    </footer>
+
+    <script>
+        function goToPage(pageId) {
+            document.querySelectorAll('.container').forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
